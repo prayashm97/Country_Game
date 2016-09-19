@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">Country Game</string>
+    <string name="title_activity_first_country"></string>
+    <string name="title_activity_second_country">SecondCountry</string>
+    <string name="title_activity_third_country">ThirdCountry</string>
+    <string name="title_activity_fourth_country">FourthCountry</string>
+    <string name="title_activity_final">FinalActivity</string>
+    <string name="yes_button">\nYES!</string>
+    <string name="no_button">\nNO!</string>
+    <string name="findButton">\nFIND THE COUNTRY!</string>
+</resources>

@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/backgroundColour"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="prayashmishra.com.country_game.FinalActivity"
+    tools:showIn="@layout/activity_final">
+
+    <TextView
+        android:id="@+id/CountryName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:textSize="@dimen/fontSizeFind" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/CountryName"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="25dp"
+        android:text="Your Country is:"
+        android:textSize="@dimen/fontSizeCountry" />
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="wrap_content"
+
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@id/CountryName"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="15dp"
+        android:layout_toRightOf="@id/CountryName"
+        android:contentDescription="Flag of said country" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:minHeight="50dp"
+        android:id="@+id/retryBtn"
+        android:layout_marginTop="20dp"
+        android:layout_below="@id/imageView"
+
+        android:background="@color/colorPrimary"
+        android:fontFamily="sans-serif"
+        android:gravity="top"
+        android:text="Retry!"
+        android:layout_centerHorizontal="true"
+
+        android:textAlignment="center"
+        android:textAllCaps="true"
+        android:textColor="@color/buttonColour"
+        android:textSize="@dimen/fontSizeFind"
+        android:textStyle="bold"
+        android:layout_marginBottom="15dp"
+        />
+
+
+</RelativeLayout>

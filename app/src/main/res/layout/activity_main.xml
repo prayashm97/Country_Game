@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/backgroundColour"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="prayashmishra.com.country_game.MainActivity">
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/scrollView" >
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/relativeInsideScroll"
+            android:transitionGroup="false">
+
+            <TextView
+                android:id="@+id/pickCountry"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="false"
+
+                android:layout_marginBottom="15dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="10dp"
+                android:text="Pick one of the 15 countries from the list\n"
+                android:textColor="@color/fontColour"
+                android:textSize="@dimen/fontSizeReg" />
+
+            <TextView
+                android:id="@+id/country1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/pickCountry"
+                android:layout_centerHorizontal="true"
+                android:text="Spain\t\t\t\t\t\t\t\tPoland\t\t\t\t\t\t\t\tUSA\n"
+                android:textSize="@dimen/fontSizeCountry" />
+
+            <TextView
+                android:id="@+id/country2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/country1"
+                android:layout_centerHorizontal="true"
+                android:text="\t\t\tSweden\t\t\t\t\t\t\tNepal\n"
+                android:textSize="@dimen/fontSizeCountry" />
+
+            <TextView
+                android:id="@+id/country3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignStart="@id/country1"
+                android:layout_below="@+id/country2"
+                android:layout_centerHorizontal="true"
+                android:text="Italy\t\t\t\t\t\t\t\tAustralia\t\t\t\t\tS. Korea\n"
+                android:textSize="@dimen/fontSizeCountry" />
+
+            <TextView
+                android:id="@+id/country4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignStart="@id/country2"
+                android:layout_below="@+id/country3"
+                android:layout_centerHorizontal="true"
+                android:text="\t\t\tIndia\t\t\t\t\t\t\t\t\t\tChina\n"
+                android:textSize="@dimen/fontSizeCountry" />
+
+            <TextView
+                android:id="@+id/country5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignStart="@id/country1"
+                android:layout_below="@+id/country4"
+                android:layout_centerHorizontal="true"
+                android:text="Egypt\t\t\t\t\t\t\t\tGreece\t\t\t\t\tCanada\n"
+                android:textSize="@dimen/fontSizeCountry" />
+
+            <TextView
+                android:id="@+id/country6"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignStart="@id/country2"
+                android:layout_below="@+id/country5"
+                android:layout_centerHorizontal="true"
+                android:text="\t\t\tGreenland\t\t\t\t\tIceland\n"
+                android:textSize="@dimen/fontSizeCountry"
+                android:layout_marginBottom="25dp"/>
+
+            <Button
+                android:id="@+id/findButton"
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                android:layout_below="@id/country6"
+                android:background="@color/colorPrimary"
+                android:text="@string/findButton"
+                android:textAlignment="center"
+                android:textAllCaps="true"
+                android:textSize="@dimen/fontSizeFind"
+                android:fontFamily="sans-serif"
+                android:textColor="@color/buttonColour"
+                android:layout_alignStart="@+id/country5"
+                android:layout_alignEnd="@+id/country1"
+                android:textStyle="bold"
+                android:gravity="top"
+                android:layout_alignParentBottom="true"
+                />
+        </RelativeLayout>
+    </ScrollView>
+
+    <!---->
+</RelativeLayout>
+
+
+
