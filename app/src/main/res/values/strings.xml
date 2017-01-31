@@ -5,7 +5,9 @@
     <string name="title_activity_third_country">ThirdCountry</string>
     <string name="title_activity_fourth_country">FourthCountry</string>
     <string name="title_activity_final">FinalActivity</string>
+    <string name="main_Instruction">Think of a country from the list
+    and then press start\n</string>
     <string name="yes_button">\nYES!</string>
     <string name="no_button">\nNO!</string>
-    <string name="findButton">\nFIND THE COUNTRY!</string>
+    <string name="findButton">\nSTART</string>
 </resources>
